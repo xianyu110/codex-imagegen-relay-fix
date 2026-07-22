@@ -1,0 +1,6 @@
+.DS_Store
+.env
+.env.*
+*.log
+auth.json
+config.toml
