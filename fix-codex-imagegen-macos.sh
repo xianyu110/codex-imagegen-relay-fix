@@ -3,7 +3,7 @@
 set -eu
 umask 077
 
-relay_base_url="${CODEX_RELAY_BASE_URL:-https://codex.maynor1024.live/v1}"
+relay_base_url="${CODEX_RELAY_BASE_URL:-https://momoai.asia/v1}"
 launch_agent_label='com.maynor.codex-imagegen-env'
 native_codex='/Applications/Codex.app/Contents/Resources/codex'
 

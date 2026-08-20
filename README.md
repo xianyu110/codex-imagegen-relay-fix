@@ -56,7 +56,7 @@ chmod 700 fix-codex-imagegen-macos.sh
 默认中转地址：
 
 ```text
-https://codex.maynor1024.live/v1
+https://momoai.asia/v1
 ```
 
 使用其他兼容中转时，通过环境变量覆盖，不需要修改脚本：

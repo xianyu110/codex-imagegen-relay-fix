@@ -31,7 +31,7 @@ Windows 使用 `%CODEX_HOME%\auth.json` 或 `%USERPROFILE%\.codex\auth.json`，�
 脚本会读取本机已有的 `~/.codex/auth.json`，只检查 `OPENAI_API_KEY` 是否存在，不会把 Key 打印出来，也不会写入配置文件。中转地址不是默认地址时，在运行前设置：
 
 ```bash
-CODEX_RELAY_BASE_URL='https://codex.maynor1024.live/v1' ./fix-codex-imagegen-macos.sh
+CODEX_RELAY_BASE_URL='https://momoai.asia/v1' ./fix-codex-imagegen-macos.sh
 ```
 
 脚本显示验证通过后，完全退出 Codex（包括后台进程），再重新启动并新建任务。对话主模型使用支持工具调用的模型，例如 `gpt-5.4`；不要把主模型改成 `gpt-image-2`，图片会由内置 `image_gen` 工具自动调用。
@@ -104,7 +104,7 @@ provider 使用 `env_key = "OPENAI_API_KEY"`，Codex 才会在请求时以 Beare
 ```toml
 [model_providers.maynoraicodex]
 name = "maynoraicodex"
-base_url = "https://codex.maynor1024.live/v1"
+base_url = "https://momoai.asia/v1"
 wire_api = "responses"
 requires_openai_auth = false
 env_key = "OPENAI_API_KEY"

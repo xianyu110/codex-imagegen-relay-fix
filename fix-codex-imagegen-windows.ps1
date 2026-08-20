@@ -9,7 +9,7 @@ if ([string]::IsNullOrWhiteSpace($RelayBaseUrl)) {
     $RelayBaseUrl = $env:CODEX_RELAY_BASE_URL
 }
 if ([string]::IsNullOrWhiteSpace($RelayBaseUrl)) {
-    $RelayBaseUrl = 'https://codex.maynor1024.live/v1'
+    $RelayBaseUrl = 'https://momoai.asia/v1'
 }
 $RelayBaseUrl = $RelayBaseUrl.TrimEnd('/')
 if ($RelayBaseUrl -match '[\r\n"]') {
