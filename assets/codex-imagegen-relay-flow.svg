@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="680" viewBox="0 0 1400 680" role="img" aria-labelledby="title desc">
+  <title id="title">Codex image generation relay flow</title>
+  <desc id="desc">A four-step flow from Codex Desktop through image_gen and a relay to gpt-image-2 and a local PNG.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111821"/><stop offset="1" stop-color="#222c38"/></linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7659"/><stop offset="1" stop-color="#ffd166"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity=".32"/></filter>
+  </defs>
+  <rect width="1400" height="680" fill="url(#bg)"/>
+  <path d="M100 388 C350 170 530 555 760 340 S1080 200 1300 360" fill="none" stroke="#3a4653" stroke-width="4" stroke-dasharray="10 16"/>
+  <g transform="translate(100 222)" filter="url(#shadow)">
+    <rect width="230" height="220" rx="24" fill="#17222c" stroke="#53616e" stroke-width="2"/>
+    <circle cx="115" cy="81" r="46" fill="#202d39" stroke="#ff8060" stroke-width="3"/>
+    <path d="M89 91l24-39 22 28 20-31" fill="none" stroke="#ffd166" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="115" y="168" text-anchor="middle" fill="#f4f7f9" font-family="Arial, sans-serif" font-size="24" font-weight="700">Codex Desktop</text>
+  </g>
+  <g transform="translate(430 222)" filter="url(#shadow)">
+    <rect width="230" height="220" rx="24" fill="#17222c" stroke="#53616e" stroke-width="2"/>
+    <circle cx="115" cy="81" r="46" fill="#202d39" stroke="#65d3aa" stroke-width="3"/>
+    <path d="M88 82h54M115 55v54" stroke="#baf3dd" stroke-width="7" stroke-linecap="round"/>
+    <path d="M97 102l18 18 18-18" fill="none" stroke="#baf3dd" stroke-width="6" stroke-linecap="round"/>
+    <text x="115" y="168" text-anchor="middle" fill="#f4f7f9" font-family="Arial, sans-serif" font-size="24" font-weight="700">image_gen</text>
+  </g>
+  <g transform="translate(760 222)" filter="url(#shadow)">
+    <rect width="230" height="220" rx="24" fill="#17222c" stroke="#53616e" stroke-width="2"/>
+    <circle cx="115" cy="81" r="46" fill="#202d39" stroke="#7fc8ff" stroke-width="3"/>
+    <path d="M76 78h78M76 96h78" stroke="#b8e4ff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M92 57l-16 24 16 24M138 57l16 24-16 24" fill="none" stroke="#b8e4ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="115" y="168" text-anchor="middle" fill="#f4f7f9" font-family="Arial, sans-serif" font-size="24" font-weight="700">Relay /v1</text>
+  </g>
+  <g transform="translate(1090 222)" filter="url(#shadow)">
+    <rect width="230" height="220" rx="24" fill="#17222c" stroke="#53616e" stroke-width="2"/>
+    <circle cx="115" cy="81" r="46" fill="#202d39" stroke="#ffd166" stroke-width="3"/>
+    <path d="M87 91l18-28 17 18 23-28" fill="none" stroke="#fff0b0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="84" y="105" width="63" height="12" rx="6" fill="#fff0b0"/>
+    <text x="115" y="168" text-anchor="middle" fill="#f4f7f9" font-family="Arial, sans-serif" font-size="24" font-weight="700">gpt-image-2</text>
+  </g>
+  <g fill="#ffd166" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="340" y="205">CALL</text><text x="670" y="205">RELAY</text><text x="1000" y="205">GENERATE PNG</text>
+  </g>
+  <g transform="translate(210 540)"><rect width="980" height="56" rx="28" fill="#17222c" stroke="#455463"/><circle cx="35" cy="28" r="10" fill="#65d3aa"/><text x="62" y="36" fill="#d7e0e7" font-family="Arial, sans-serif" font-size="21">MAIN MODEL FOR CHAT  /  image_gen FOR IMAGES</text></g>
+</svg>
